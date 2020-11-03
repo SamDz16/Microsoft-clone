@@ -15,6 +15,9 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="menu-bars">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
       <!-- Navbar -->
       <div class="navbar flex">
         <nav>
@@ -30,7 +33,7 @@
         </nav>
         <div class="search">
           <i class="fas fa-search"></i>
-          <i class="fas fa-dollar-sign"></i>
+          <i class="fas fa-shopping-cart"></i>
         </div>
       </div>
 
@@ -102,7 +105,7 @@
       <!-- Showcase 1 -->
       <section class="showcase-1">
         <div class="showcase-1-content">
-          <h1>Xbox Game Pass Ultimate</h1>
+          <h3>Xbox Game Pass Ultimate</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
             aliquid veritatis officia odit, animi debitis!
@@ -266,5 +269,10 @@
         </ul>
       </div>
     </footer>
+    <script>
+      document.querySelector(".menu-bars").addEventListener("click", () => {
+        document.querySelector(".navbar.flex ul").classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
